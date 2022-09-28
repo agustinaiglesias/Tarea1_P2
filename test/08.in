@@ -1,0 +1,12 @@
+definirFecha 10/02/2022
+fechaActual
+fechaActualExtendida
+reiniciarEstructuras
+siguienteDia
+aumentarDias 20
+fechaActual
+fechaActualExtendida
+definirFecha 01/02/2020
+fechaActual
+fechaActualExtendida
+Fin

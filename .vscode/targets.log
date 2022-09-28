@@ -1,0 +1,779 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Sun Aug 28 18:20:34 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from `makefile', line 38)
+MODULOS = utils $(ENTREGAR) 
+# makefile (from `makefile', line 74)
+ARCHIVO_CLAVES = claves.txt
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR 
+ := g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+ONEDRIVE = C:\Users\nr200\OneDrive
+# makefile (from `makefile', line 33)
+ARCHIVO_ENTREGA = Tarea1.tar.gz
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# makefile (from `makefile', line 71)
+EJECUTABLE = principal
+# environment
+TMP = C:\Users\nr200\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# makefile (from `makefile', line 35)
+ENTREGAR = fecha controlFecha 
+# environment
+VSCODE_CWD = C:\Users\nr200\AppData\Local\Programs\Microsoft VS Code
+# environment
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\texlive\2018\bin\win32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\MinGW\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files (x86)\Chromedriver\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\nr200\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\nr200\AppData\Local\Programs\Python\Python39\;C:\Users\nr200\AppData\Local\Microsoft\WindowsApps;;C:\Users\nr200\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nr200\AppData\Roaming\npm
+# environment
+LM_LICENSE_FILE = C:\maxplus2\license.dat
+# makefile (from `makefile', line 54)
+LD = g++ 
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from `makefile', line 117)
+DIFFS = $(CASOS:%=$(SALIDADIR)/%.diff)
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132692181045106653
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\nr200
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from `makefile', line 110)
+CASOS = 01 02 03 04 05 06 07 08
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `makefile', line 229)
+LIB = tarea.a
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17760_SACHCVIDUOFPGBYC
+# environment
+COMPUTERNAME = DESKTOP-Q8FVVAT
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = nr200
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from `makefile', line 46)
+OUTDIR = test
+# makefile (from `makefile', line 41)
+HDIR = include
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\nr200\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-Q8FVVAT
+# environment
+ONEDRIVECONSUMER = C:\Users\nr200\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from `makefile', line 115)
+OUTS = $(CASOS:%=$(OUTDIR)/%.out)
+# environment
+USERDOMAIN = DESKTOP-Q8FVVAT
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `makefile', line 45)
+INDIR = test
+# makefile (from `makefile', line 53)
+CC = g++ 
+# makefile (from `makefile', line 43)
+ODIR = obj
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `makefile', line 61)
+CCFLAGS = -Wall -Werror -I$(HDIR) -g -DNDEBUG
+# makefile (from `makefile', line 75)
+COMANDO_CLAVES = shasum
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# makefile (from `makefile', line 66)
+HS = $(MODULOS:%=$(HDIR)/%.h)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LOCALAPPDATA = C:\Users\nr200\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# makefile (from `makefile', line 203)
+CPPS_ENTREGA = $(ENTREGAR:%=%.$(EXT))
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# makefile (from `makefile', line 114)
+INS = $(CASOS:%=$(INDIR)/%.in)
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+# makefile (from `makefile', line 68)
+OS = $(MODULOS:%=$(ODIR)/%.o)
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\bde3d638d441630aca9acebf10d8f78e-1.70.1-main-sock
+# makefile (from `makefile', line 51)
+EXT = cpp
+# environment
+HOMEPATH = \Users\nr200
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `makefile', line 70)
+PRINCIPAL = principal
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# makefile (from `makefile', line 42)
+CPPDIR = src
+# environment
+APPDATA = C:\Users\nr200\AppData\Roaming
+# environment
+TEMP = C:\Users\nr200\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# makefile (from `makefile', line 47)
+SALIDADIR = test/salidas
+# automatic
+<F = $(notdir $<)
+# makefile (from `makefile', line 116)
+SALS = $(CASOS:%=$(SALIDADIR)/%.sal)
+# makefile (from `makefile', line 67)
+CPPS = $(MODULOS:%=$(CPPDIR)/%.$(EXT))
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 3c03
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 17760
+# makefile (from `makefile', line 148)
+tS = $(CASOS:%=t-%)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-Q8FVVAT
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=14/175=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# : could not be stat'd.
+# C:\Users\nr200\AppData\Roaming\npm (key C:/Users/nr200/AppData/Roaming/npm, mtime 1624745146): 9 files, no impossibilities.
+# C:\texlive\2018\bin\win32 (key C:/texlive/2018/bin/win32, mtime 1541734736): 454 files, no impossibilities.
+# C:\Program Files (x86)\Bitvise SSH Client (key C:/Program Files (x86)/Bitvise SSH Client, mtime 1544709371): 47 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1602974236): 32 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1660017365): 154 files, no impossibilities.
+# . (key g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes, mtime 1661140083): 10 files, no impossibilities.
+# C:\Users\nr200\AppData\Local\Programs\Python\Python39\ (key C:/Users/nr200/AppData/Local/Programs/Python/Python39/, mtime 1624744586): 7 files, no impossibilities.
+# C:\Users\nr200\AppData\Local\Microsoft\WindowsApps (key C:/Users/nr200/AppData/Local/Microsoft/WindowsApps, mtime 1661471705): 30 files, no impossibilities.
+# C:\ProgramData\chocolatey\bin (key C:/ProgramData/chocolatey/bin, mtime 1624744504): 13 files, no impossibilities.
+# test (key g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes/test, mtime 1660528262): No files, no impossibilities so far.
+# C:\Program Files\nodejs\ (key C:/Program Files/nodejs/, mtime 1624744479): 11 files, no impossibilities.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1544720790): 55 files, no impossibilities.
+# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1611845207): 5 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1623174776): 4 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1660496644): 118 files, no impossibilities.
+# C:\Program Files (x86)\Chromedriver\ (key C:/Program Files (x86)/Chromedriver/, mtime 1619655374): 3 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1623174759): 7 files, no impossibilities.
+# C:\Program Files\MiKTeX 2.9\miktex\bin\x64\ (key C:/Program Files/MiKTeX 2.9/miktex/bin/x64/, mtime 1541685844): 600 files, no impossibilities.
+# include (key g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes/include, mtime 1660701953): 5 files, no impossibilities so far.
+# src (key g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes/src, mtime 1660702540): 5 files, no impossibilities so far.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1622761970): 8 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1661694369): 2995 files, no impossibilities.
+# C:\Users\nr200\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/nr200/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1660497152): 4 files, no impossibilities.
+# C:\Users\nr200\AppData\Local\Programs\Python\Python39\Scripts\ (key C:/Users/nr200/AppData/Local/Programs/Python/Python39/Scripts/, mtime 1622762391): 5 files, no impossibilities.
+# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1587493257): 5 files, no impossibilities.
+
+# 4586 files, no impossibilities in 27 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.cpp  include/%.h
+#  commands to execute (from `makefile', line 88):
+	@printf 'Compilando $(<) \n'; \
+	$(eval resced = $(shell grep -E '/\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/' $<)) \
+	$(eval resr = $(shell grep -n -P '_rep_(?!$(basename $(notdir $<)))' $<)) \
+	$(eval resh = $(subst #,\#,$(shell grep -n -P 'include(?!.*[.]h)' $< ))) \
+	if [ -n "$(resced)" ] && [ -z "$(resr)" ] && [ -z "$(resh)" ];  \
+	then $(CC) $(CCFLAGS) -c $< -o $@ ; \
+	else \
+	if [ -z "$(resced)" ]; then printf ' No incluye cedula.\n' ; fi ; \
+	if [ -n "$(resh)" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  "$(resh)"\n' ; fi ; \
+	if [ -n "$(resr)" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  "$(resr)"\n' ; fi ; \
+	printf '    NO SE COMPILO $(<)\n' ; \
+	rm -f $@; \
+	fi;
+	
+
+test/salidas/%.sal: test/%.in
+#  commands to execute (from `makefile', line 123):
+	-timeout 4 valgrind -q --leak-check=full ./$(EJECUTABLE) < $< > $@ 2>&1
+	@if [ $$(stat -L -c %s $@) -ge 20000 ]; then \
+	echo "tamaño excedido" > $@;\
+	fi
+	
+
+test/salidas/t-%.sal: test/t-%.in
+#  commands to execute (f 
+rom `makefile', line 130):
+	-timeout 10 ./$(EJECUTABLE) < $< > $@ 2>&1
+	
+
+%.diff: Makefile
+
+test/salidas%.diff: test%.out test/salidas%.sal
+#  commands to execute (from `makefile', line 136):
+	@diff $^ > $@;                                            \
+	if [ $$? -ne 0 ];                                         \
+	then                                                      \
+	echo ---- ERROR en caso $@ ----;                  \
+	fi
+	
+
+t-%: test/%.in test/%.out
+#  commands to execute (from `makefile', line 155):
+	@timeout 4 valgrind -q --leak-check=full ./$(EJECUTABLE) < $< > $@tmp 2>&1;  \
+	diff `echo $(word 2,$^)` $@tmp ; \
+	if [ $$? -eq 0 ];                                         \
+	then                                                      \
+	echo ---- Bien ----;                              \
+	fi;                                                       \
+	rm -f $@tmp
+	
+
+# 6 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+include/controlFecha.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-16 23:05:53
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean_bin:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 213):
+	@rm -f $(EJECUTABLE) $(ODIR)/$(PRINCIPAL).o $(OS)
+	
+
+testing: all test/salidas/01.diff test/salidas/02.diff test/salidas/03.diff test/salidas/04.diff test/salidas/05.diff test/salidas/06.diff test/salidas/07.diff test/salidas/08.diff
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 171):
+	@LST_ERR=$$(find $(SALIDADIR) -name *.diff* -size +0c -print);          \
+	if [ -n "$${LST_ERR}" ];                                                \
+	then                                                                    \
+	echo -- CASOS CON ERRORES --;                                   \
+	echo "$${LST_ERR}" | sed -e 's/.*\///' -e 's/\..*//';           \
+	fi;                                                                     \
+	echo -- RESULTADO DE CADA CASO --;                                      \
+	RES=;                                                                   \
+	for caso in $(CASOS); do                                                \
+	if [ 0 -eq $$(stat -c %s "$(SALIDADIR)/$${caso}.diff") ];       \
+	then                                                            \
+	RES=$${RES}1 ;                                          \
+	else                                                            \
+	RES=$${RES}0 ;                                          \
+	fi;                                                             \
+	done;                                                                   \
+	echo $${RES}
+	
+
+t-06: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t-07: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t-08: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: principal
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test/salidas/06.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/utils.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 21:39:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: all clean_bin clean_test clean testing entrega claves
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t-01: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/salidas/06.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+principal: obj/principal.o obj/utils.o obj/fecha.o obj/controlFecha.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-22 00:48:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 106):
+	@printf 'Compilando y enlazando $(@) \n'; \
+	$(LD) $(CCFLAGS) $^ -o $@
+	
+
+test/salidas/01.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/controlFecha.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-16 23:15:40
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+t-02: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/salidas/01.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/salidas/02.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 23:29:08
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean_test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 217):
+	@rm -f $(SALIDADIR)/*.sal $(SALIDADIR)/*.diff
+	
+
+# Not a target:
+test/salidas/02.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/fecha.o: src/fecha.cpp include/fecha.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `fecha'
+#  Last modified 2022-08-22 00:48:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 88):
+	@printf 'Compilando $(<) \n'; \
+	$(eval resced = $(shell grep -E '/\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/' $<)) \
+	$(eval resr = $(shell grep -n -P '_rep_(?!$(basename $(notdir $<)))' $<)) \
+	$(eval resh = $(subst #,\#,$(shell grep -n -P 'include(?!.*[.]h)' $< ))) \
+	if [ -n "$(resced)" ] && [ -z "$(resr)" ] && [ -z "$(resh)" ];  \
+	then $(CC) $(CCFLAGS) -c $< -o $@ ; \
+	else \
+	if [ -z "$(resced)" ]; then printf ' No incluye cedula.\n' ; fi ; \
+	if [ -n "$(resh)" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  "$(resh)"\n' ; fi ; \
+	if [ -n "$(resr)" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  "$(resr)"\n' ; fi ; \
+	printf '    NO SE COMPILO $(<)\n' ; \
+	rm -f $@; \
+	fi;
+	
+
+claves.txt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 195):
+	rm -f $@
+	$(COMANDO_CLAVES) $(ENTREGAR:%=$(CPPDIR)/%.$(EXT)) > $@
+	
+
+t-03: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/salidas/03.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/fecha.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 17:18:07
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+tarea.a: obj/utils.o obj/info.o obj/principal.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 231):
+	ar -qc $@ $^	
+	
+
+# Not a target:
+test/salidas/03.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t-05: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test/salidas/07.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/salidas/05.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+entrega: claves
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 205):
+	@rm -f $(ARCHIVO_ENTREGA)
+	tar zcf $(ARCHIVO_ENTREGA) $(ARCHIVO_CLAVES) -C src $(CPPS_ENTREGA)
+	@echo --        El directorio y archivo a entregar es:
+	@echo $$(pwd)/$(ARCHIVO_ENTREGA)
+	
+
+# Not a target:
+include/fecha.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-16 23:02:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean: clean_test clean_bin
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 221):
+	@rm -f $(ARCHIVO_ENTREGA) $(ARCHIVO_CLAVES) *~ $(HDIR)/*~ $(CPPDIR)/*~ $(INDIR)/*~ $(OUTDIR)/*~
+	
+
+obj/utils.o: src/utils.cpp include/utils.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `utils'
+#  Last modified 2022-08-22 00:48:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 88):
+	@printf 'Compilando $(<) \n'; \
+	$(eval resced = $(shell grep -E '/\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/' $<)) \
+	$(eval resr = $(shell grep -n -P '_rep_(?!$(basename $(notdir $<)))' $<)) \
+	$(eval resh = $(subst #,\#,$(shell grep -n -P 'include(?!.*[.]h)' $< ))) \
+	if [ -n "$(resced)" ] && [ -z "$(resr)" ] && [ -z "$(resh)" ];  \
+	then $(CC) $(CCFLAGS) -c $< -o $@ ; \
+	else \
+	if [ -z "$(resced)" ]; then printf ' No incluye cedula.\n' ; fi ; \
+	if [ -n "$(resh)" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  "$(resh)"\n' ; fi ; \
+	if [ -n "$(resr)" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  "$(resr)"\n' ; fi ; \
+	printf '    NO SE COMPILO $(<)\n' ; \
+	rm -f $@; \
+	fi;
+	
+
+# Not a target:
+test/salidas/05.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/principal.o: principal.cpp
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-22 00:48:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 81):
+	@printf 'Compilando $(<) \n'; \
+	$(CC) $(CCFLAGS) -c $< -o $@
+	
+
+# Not a target:
+test/salidas/08.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/controlFecha.o: src/controlFecha.cpp include/controlFecha.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `controlFecha'
+#  Last modified 2022-08-22 00:48:03
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `makefile', line 88):
+	@printf 'Compilando $(<) \n'; \
+	$(eval resced = $(shell grep -E '/\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/' $<)) \
+	$(eval resr = $(shell grep -n -P '_rep_(?!$(basename $(notdir $<)))' $<)) \
+	$(eval resh = $(subst #,\#,$(shell grep -n -P 'include(?!.*[.]h)' $< ))) \
+	if [ -n "$(resced)" ] && [ -z "$(resr)" ] && [ -z "$(resh)" ];  \
+	then $(CC) $(CCFLAGS) -c $< -o $@ ; \
+	else \
+	if [ -z "$(resced)" ]; then printf ' No incluye cedula.\n' ; fi ; \
+	if [ -n "$(resh)" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  "$(resh)"\n' ; fi ; \
+	if [ -n "$(resr)" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  "$(resr)"\n' ; fi ; \
+	printf '    NO SE COMPILO $(<)\n' ; \
+	rm -f $@; \
+	fi;
+	
+
+# Not a target:
+principal.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 21:39:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test/salidas/07.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t-04: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+claves: claves.txt
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+test/salidas/04.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/info.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test/salidas/08.sal: principal
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+include/utils.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-14 21:39:48
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+test/salidas/04.diff:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check-syntax:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 226):
+	gcc -o nul -S ${CHK_SOURCES}
+	
+
+# files hash-table stats:
+# Load=51/1024=5%, Rehash=0, Collisions=9/123=7%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sun Aug 28 18:20:34 2022
+
+ 

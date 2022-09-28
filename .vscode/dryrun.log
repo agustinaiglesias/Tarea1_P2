@@ -1,0 +1,60 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes'
+printf 'Compilando principal.cpp \n'; \
+	g++  -Wall -Werror -Iinclude -g -DNDEBUG -c principal.cpp -o obj/principal.o
+ 
+printf 'Compilando src/utils.cpp \n'; \
+	 \
+	 \
+	 \
+	if [ -n "" ] && [ -z "" ] && [ -z "" ];  \
+	then g++  -Wall -Werror -Iinclude -g -DNDEBUG -c src/utils.cpp -o obj/utils.o ; \
+	else \
+		if [ -z "" ]; then printf ' No incluye cedula.\n' ; fi ; \
+		if [ -n "" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  ""\n' ; fi ; \
+		if [ -n "" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  ""\n' ; fi ; \
+		printf '    NO SE COMPILO src/utils.cpp\n' ; \
+		rm -f obj/utils.o; \
+	fi;
+ 
+printf 'Compilando src/fecha.cpp \n'; \
+	 \
+	 \
+	 \
+	if [ -n "" ] && [ -z "" ] && [ -z "" ];  \
+	then g++  -Wall -Werror -Iinclude -g -DNDEBUG -c src/fecha.cpp -o obj/fecha.o ; \
+	else \
+		if [ -z "" ]; then printf ' No incluye cedula.\n' ; fi ; \
+		if [ -n "" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  ""\n' ; fi ; \
+		if [ -n "" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  ""\n' ; fi ; \
+		printf '    NO SE COMPILO src/fecha.cpp\n' ; \
+		rm -f obj/fecha.o; \
+	fi;
+ 
+printf 'Compilando src/controlFecha.cpp \n'; \
+	 \
+	 \
+	 \
+	if [ -n "" ] && [ -z "" ] && [ -z "" ];  \
+	then g++  -Wall -Werror -Iinclude -g -DNDEBUG -c src/controlFecha.cpp -o obj/controlFecha.o ; \
+	else \
+		if [ -z "" ]; then printf ' No incluye cedula.\n' ; fi ; \
+		if [ -n "" ]; then printf '  Include de archivos que no son .h:\n' ; printf '  ""\n' ; fi ; \
+		if [ -n "" ]; then printf '  Uso de representación de otros tipos:\n' ; printf '  ""\n' ; fi ; \
+		printf '    NO SE COMPILO src/controlFecha.cpp\n' ; \
+		rm -f obj/controlFecha.o; \
+	fi;
+printf 'Compilando y enlazando principal \n'; \
+	g++  -Wall -Werror -Iinclude -g -DNDEBUG obj/principal.o obj/utils.o obj/fecha.o obj/controlFecha.o -o principal
+make.exe: Leaving directory `g:/My Drive/FING docente/Cursos/Prog2/Curso2022_2do/prog2lab2do/tarea1-estudiantes'
+ 
+process_begin: CreateProcess(NULL, grep -E /\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/ src/utils.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P _rep_(?!utils) src/utils.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P include(?!.*[.]h) src/utils.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -E /\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/ src/fecha.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P _rep_(?!fecha) src/fecha.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P include(?!.*[.]h) src/fecha.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -E /\*[[:blank:]]*[[:digit:]]{7}[[:blank:]]*\*/ src/controlFecha.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P _rep_(?!controlFecha) src/controlFecha.cpp, ...) failed.
+process_begin: CreateProcess(NULL, grep -n -P include(?!.*[.]h) src/controlFecha.cpp, ...) failed.
+
